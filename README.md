@@ -10,3 +10,7 @@
 * EM.py --> acording the json file to estimate the parameter.
 * gmm.py --> to create Gaussian distribution datum
 
+## Percepion  
+* single training data set  
+* batch training data set  
+* imply Ho-Kashyap algorithm to training data set  
