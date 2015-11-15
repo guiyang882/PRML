@@ -14,3 +14,10 @@
 * single training data set  
 * batch training data set  
 * imply Ho-Kashyap algorithm to training data set  
+
+## InfoGain  
+* use information gain and entropy information to classification  
+* draw the classification Tree  
+* according the metrial about Machine Learning In Action  
+
+
