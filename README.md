@@ -26,6 +26,8 @@
 
 <code>
 sudo apt-get install glpk-some package  
+<code/>
+<code>
 glpsol -m description file -o output file 
 </code>
 
