@@ -23,10 +23,11 @@
 ## Simplex algorithm  
 * you can use .py file to solve some simplex question  
 * You can also install glpk or Octave to solve these Linear algorithm  
-
+* install glpk  
 <code>
 sudo apt-get install glpk-some package  
 <code/>
+* use glpsol to run some question  
 <code>
 glpsol -m description file -o output file 
 </code>
