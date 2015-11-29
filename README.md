@@ -30,3 +30,25 @@ use glpsol to run some question
 glpsol -m description file -o output file 
 ```
 * please format your problem to standard format  
+
+## BP neutral network  
+* user can redefine the struct of the neutral network  
+* train the test data, we can get follow run info  
+```
+error 10.33106
+error 2.53433
+error 2.67919
+error 2.68346
+error 2.38677
+error 2.65445
+error 2.38764
+error 2.66426
+error 2.53938
+error 2.58303
+
+Error Samples number is  3
+[[array([ 1.2 ,  1.4 , -1.89]), 1, 0],
+ [array([ 1.39,  3.16,  2.87]), 2, 0],
+ [array([ 0.25,  0.68, -0.99]), 1, 2]]
+```
+
