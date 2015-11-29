@@ -5,6 +5,7 @@ import csv
 import numpy as np
 import random
 import math
+import matplotlib.pyplot as plt
 
 random.seed(0)
 
@@ -97,8 +98,9 @@ class BP:
             error = error + 0.5*(targets[k]-self.ao[k])**2
         return error
 
-    def train(self, samples, labels, iterations=1000, N=1):
+    def train(self, samples, labels, iterations=1000, N=0.5):
         # N: learning rate
+        err_set = []
         for i in xrange(iterations):
             error = 0.0
             for index in range(len(samples)):
@@ -106,8 +108,13 @@ class BP:
                 targets = labels[index]
                 self.update(inputs)
                 error = error + self.backPropagate(targets, N)
+            err_set.append(error)
             if i % 100 == 0:
                 print('error %-.5f' % error)
+        plt.plot(xrange(iterations),err_set)
+        plt.xlabel("iterations times")
+        plt.ylabel("Error Value")
+        plt.show()
 
     def test(self,test_samples,labels):
         print 

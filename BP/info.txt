@@ -1,0 +1,61 @@
+Network(3,3,3)
+error 12.08472
+error 3.12337
+error 2.87417
+error 3.11598
+error 2.84120
+error 2.83827
+error 3.08122
+error 3.08582
+error 2.99313
+error 2.93501
+
+Error Samples number is  4
+[[array([ 1.2 ,  1.4 , -1.89]), 1, 0], [array([ 1.39,  3.16,  2.87]), 2, 0], [array([-1.54,  1.17,  0.64]), 1, 2], [array([ 0.25,  0.68, -0.99]), 1, 2]]
+
+
+Network(3,4,3)
+error 10.33106
+error 2.53433
+error 2.67919
+error 2.68346
+error 2.38677
+error 2.65445
+error 2.38764
+error 2.66426
+error 2.53938
+error 2.58303
+
+Error Samples number is  3
+[[array([ 1.2 ,  1.4 , -1.89]), 1, 0], [array([ 1.39,  3.16,  2.87]), 2, 0], [array([ 0.25,  0.68, -0.99]), 1, 2]]
+
+Network(3,2,3)
+error 10.46142
+error 6.79951
+error 6.52134
+error 7.41841
+error 6.22269
+error 6.24190
+error 6.23502
+error 6.22896
+error 6.22397
+error 6.21950
+
+Error Samples number is  9
+[[array([ 1.39,  3.16,  2.87]), 2, 0], [array([ 0.21,  0.03, -2.21]), 0, 1], [array([ 0.18,  1.22,  0.16]), 2, 1], [array([-1.18,  0.39, -0.39]), 2, 1], [array([ 0.74,  0.96, -1.16]), 2, 1], [array([-0.38,  1.94, -0.48]), 2, 1], [array([ 0.02,  0.72, -0.17]), 2, 1], [array([ 0.44,  1.31, -0.14]), 2, 1], [array([ 0.46,  1.49,  0.68]), 2, 1]]
+
+
+Learning Ratio is 0.5
+error 8.72344
+error 2.76856
+error 2.66488
+error 2.67118
+error 2.64143
+error 2.42532
+error 2.40328
+error 2.36690
+error 2.48795
+error 2.38123
+
+Error Samples number is  3
+[[array([ 1.39,  3.16,  2.87]), 2, 0], [array([-1.54,  1.17,  0.64]), 1, 2], [array([ 0.25,  0.68, -0.99]), 1, 2]]
