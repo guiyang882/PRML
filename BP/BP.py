@@ -12,7 +12,6 @@ random.seed(0)
 def rand(a, b):
     return (b-a)*random.random() + a
 
-# 双正切函数的导数，在求取输出层和隐藏侧的误差项的时候会用到
 def dtanh(y):
     return 1.0 - y**2
 
@@ -44,9 +43,6 @@ class BP:
                 self.wo[j][k] = rand(-2.0, 2.0)
 
     def update(self, inputs):
-        if len(inputs) != self.ni-1:
-            raise ValueError('wrong number of inputs')
-
         # input activations
         for i in range(self.ni-1):
             self.ai[i] = inputs[i]
