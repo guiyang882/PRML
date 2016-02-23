@@ -14,11 +14,12 @@ def example_00():
     print sess.run(y,feed_dict={a:10,b:19})
 
 def linear_regression():
-    trX = np.linspace(-1,1,101)
-    trY = 2 * trX + np.random.randn(trX.shape[0]) * 0.33
+    NUM = 101
+    trX = np.linspace(-1.0,1.0,NUM).astype(np.float32)
+    trY = 2 * trX + np.random.randn(NUM) * 0.33
 
-    X = tf.placeholder("float")
-    Y = tf.placeholder("float")
+    X = tf.placeholder(tf.float32,shape=[NUM])
+    Y = tf.placeholder(tf.float32,shape=[NUM])
 
     def model(X,w):
         return tf.mul(X,w)
@@ -34,10 +35,8 @@ def linear_regression():
     sess = tf.Session()
     sess.run(init)
     for i in xrange(100):
-        for (x,y) in zip(trX,trY):
-            sess.run(train_op,feed_dict={X:x,Y:y})
+        sess.run(train_op,feed_dict={X:trX,Y:trY})
     print sess.run(w)
-
 
 if __name__ == "__main__":
     linear_regression()
